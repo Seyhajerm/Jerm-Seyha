@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210418 18:10:00.127" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="D:\Youtube\seyha\test.robot">
+<test id="s1-t1" name="[02] login to Youtube">
+<kw name="sh1">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${Youtube}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210418 18:10:00.533" level="INFO">Opening browser 'Chrome' to base url 'https://www.youtube.com/'.</msg>
+<status status="PASS" starttime="20210418 18:10:00.533" endtime="20210418 18:10:09.171"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210418 18:10:09.171" endtime="20210418 18:10:09.994"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name=search_query</arg>
+<arg>${KH}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210418 18:10:09.997" level="INFO">Typing text 'Love is gone' into text field 'name=search_query'.</msg>
+<status status="PASS" starttime="20210418 18:10:09.995" endtime="20210418 18:10:11.258"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>(//YT-ICON[@class='style-scope ytd-searchbox'])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210418 18:10:11.259" level="INFO">Clicking element '(//YT-ICON[@class='style-scope ytd-searchbox'])[2]'.</msg>
+<status status="PASS" starttime="20210418 18:10:11.258" endtime="20210418 18:10:12.169"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//YT-FORMATTED-STRING[@class='style-scope ytd-video-renderer'][text()='SLANDER - Love Is Gone ft. Dylan Matthew (Acoustic) - Lyrics']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210418 18:10:12.170" level="INFO">Clicking element '//YT-FORMATTED-STRING[@class='style-scope ytd-video-renderer'][text()='SLANDER - Love Is Gone ft. Dylan Matthew (Acoustic) - Lyrics']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210418 18:10:13.034" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210418 18:10:12.242" endtime="20210418 18:10:13.035"/>
+</kw>
+<msg timestamp="20210418 18:10:13.042" level="FAIL">Element with locator '//YT-FORMATTED-STRING[@class='style-scope ytd-video-renderer'][text()='SLANDER - Love Is Gone ft. Dylan Matthew (Acoustic) - Lyrics']' not found.</msg>
+<status status="FAIL" starttime="20210418 18:10:12.169" endtime="20210418 18:10:13.042"/>
+</kw>
+<status status="FAIL" starttime="20210418 18:10:00.533" endtime="20210418 18:10:13.043"/>
+</kw>
+<status status="FAIL" starttime="20210418 18:10:00.533" endtime="20210418 18:10:13.060">Element with locator '//YT-FORMATTED-STRING[@class='style-scope ytd-video-renderer'][text()='SLANDER - Love Is Gone ft. Dylan Matthew (Acoustic) - Lyrics']' not found.</status>
+</test>
+<status status="FAIL" starttime="20210418 18:10:00.127" endtime="20210418 18:10:13.098"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

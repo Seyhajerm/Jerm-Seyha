@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210421 21:33:28.168" rpa="false" schemaversion="2">
+<suite id="s1" name="File" source="D:\Youtube\UPLAOD_FILES\file.robot">
+<test id="s1-t1" name="upload file">
+<kw name="JERM UPLOAD">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210421 21:33:28.716" level="INFO">Opening browser 'chrome' to base url 'https://smallpdf.com/pdf-to-word'.</msg>
+<status status="PASS" starttime="20210421 21:33:28.716" endtime="20210421 21:33:33.873"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210421 21:33:33.873" endtime="20210421 21:33:34.759"/>
+</kw>
+<status status="PASS" starttime="20210421 21:33:28.715" endtime="20210421 21:33:34.760"/>
+</kw>
+<kw name="SEYHA UPLOAD">
+<kw name="Choose File" library="Selenium2Library">
+<arg>id=__picker-input</arg>
+<arg>D:\\Youtube\\UPLAOD_FILES/pdf-test.pdf</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20210421 21:33:34.802" level="INFO">Sending D:\Youtube\UPLAOD_FILES\pdf-test.pdf to browser.</msg>
+<status status="PASS" starttime="20210421 21:33:34.801" endtime="20210421 21:33:35.358"/>
+</kw>
+<status status="PASS" starttime="20210421 21:33:34.798" endtime="20210421 21:33:35.359"/>
+</kw>
+<status status="PASS" starttime="20210421 21:33:28.714" endtime="20210421 21:33:35.360"/>
+</test>
+<status status="PASS" starttime="20210421 21:33:28.173" endtime="20210421 21:33:35.372"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="File">File</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

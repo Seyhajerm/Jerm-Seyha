@@ -1,0 +1,14 @@
+1619027215148	geckodriver	INFO	Listening on 127.0.0.1:51033
+1619027218180	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\TR\\AppData\\Local\\Temp\\rust_mozprofileJ81l6w"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619027223144	Marionette	INFO	Listening on port 51041
+1619027223638	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619027225132	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\TR\AppData\Local\Temp\rust_mozprofileJ81l6w\protections.sqlite
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619027229310	Marionette	INFO	Stopped listening on port 51041
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
